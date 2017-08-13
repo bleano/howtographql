@@ -1,0 +1,16 @@
+schema {
+    query: Query
+}
+
+type Query {
+    allLinks(limit: Int = 3): [Link]
+    allReverseLinks: [Link]
+}
+
+type Link {
+    url: String!
+    description: String!
+}
+
+
+
